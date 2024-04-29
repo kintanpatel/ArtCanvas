@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- outline black ox was created using drawable which was available
+    in res->drawable folder with -> bg_corner.xml and that drawable use for frame layout background.-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_corner">
+
+
+        <com.example.assignment2.MyDrawingArea
+            android:id="@+id/cusview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="clear"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10pt"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:onClick="save"
+            android:text="Save" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/blackColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="Black" />
+
+        <Button
+            android:id="@+id/redColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="Red" />
+
+        <Button
+            android:id="@+id/blueColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Blue" />
+
+        <!-- Add more color buttons as needed -->
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <!--Outline box created with background which was in custom drawable-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/thumbnail1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_corner"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/thumbnail2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_corner"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/thumbnail3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_corner"
+                android:padding="8dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>
