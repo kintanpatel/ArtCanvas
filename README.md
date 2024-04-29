@@ -1,11 +1,6 @@
-# ArtCanvas
-ArtCanvas - Draw &amp; Save
 
-Great! Here's a description for your drawing application:
 
----
-
-**Title: ArtCanvas - Draw & Save**
+**ArtCanvas - Draw & Save**
 
 **Description:**
 Unleash your creativity with ArtCanvas - the ultimate drawing app for iOS! Whether you're an aspiring artist or just love doodling, ArtCanvas provides you with the perfect canvas to express yourself.
