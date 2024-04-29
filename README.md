@@ -21,4 +21,4 @@ Unleash your creativity with ArtCanvas - the ultimate drawing app for iOS! Wheth
 ArtCanvas empowers you to unleash your creativity anytime, anywhere. Whether you're sketching ideas on the go or creating elaborate artworks, our app provides you with the tools you need to bring your imagination to life. Plus, with the ability to save your favorite creations, you can cherish and share your artwork for years to come.
 ## Screenshots
 
-<img src="https://github.com/kintanpatel/ArtCanvas/blob/main/ss.png"/>
+<img src="https://github.com/kintanpatel/ArtCanvas/blob/main/ss.png" width="400" height="700"/>
